@@ -1,0 +1,18 @@
+{
+    "manifest_version": 2,
+    "name": "Zoom Attendance",
+    "version": "1.0.0",
+    "description": "This extension fetches attendance from Zoom Mettings",
+    "browser_action": {
+        "default_popup": "pop.html",
+        "default_title": "Attendance Layout"
+    },
+    "content_scripts": [{
+        "matches": ["<all_urls>"],
+        "js": ["content.js"]
+    }],
+    "permissions": [],
+    "background": {
+        "scripts": ["background.js"]
+    }
+}

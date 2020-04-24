@@ -1,0 +1,56 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Zoom Attendance</title>
+        <script src="popup.js"></script>
+    </head>
+    <style type="text/css">
+        body{
+            background: #e1e1e1;
+            height: 120px;
+            width: 300px;
+        }
+        h2{
+            text-align: center;
+        }
+        #status{
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            padding-top: 20px;
+        }
+        #myResults, #stopResults{
+            background: #4CAF50;
+            padding: 15px 25px;
+            border: none;
+            color: #fff;
+            margin-top: 10px;
+            cursor: pointer;
+        }
+        .imgs{
+            width: 40%;
+        }
+        .imgs img{
+            display: block;
+            margin: 0 auto;
+            width: 65px;
+        }
+        .btn{
+            width: 60%;
+        }
+    </style>
+    <body>
+        <h2>Zoom Attendance Scraper</h2>
+        <div id="status">
+            <div class="imgs">
+                <img src="https://www.portfoliosolutions.com/sites/portfoliosolutions.us1.advisor.ws/files/images/zoom_logo_0.png">
+            </div>
+            <div class="btn">
+                <button id="myResults">Start</button>
+                <button id="stopResults">Stop</button>
+            </div>
+        </div>
+        <div id="result">
+        </div>
+    </body>
+</html>
